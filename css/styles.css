@@ -2,6 +2,9 @@
     --basic-font: "Playfair Display", san-serif;
     --dark-color: #1E1E1E;
     --white-color: #FFFFFF;
+    --special-font: "Clicker Script", san-serif;
+    --creamy-color: #F9C06A;
+"
 
 }
 
@@ -48,6 +51,7 @@ button {
     padding: 0;
     margin: 0;
     cursor: pointer;
+    border: 0px;
 }
 .container {
     max-width: 1180px;
@@ -65,6 +69,12 @@ section {
     padding-right: 15px; 
 }
 
+.button {
+    padding: 14px 27px;
+    border-radius: 20px;
+    background-color: var(--creamy-color);
+
+}
 header {
     padding-top: 0;
     background-image: url(../img/header_hero_back_img.jpg);
@@ -73,16 +83,54 @@ header {
     background-size: 1366px;
     color: var(--white-color);
     .header-top {
+        padding-top: 30px;
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        .logo {
+            font-family: var(--special-font);
+            font-size: 35px;
+        }
         nav {
         
             .nav-list {
                 display: flex;
+                gap: 50px;
+                color: var(--white-color);
+                font-family: Playfair Display;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 18.66px;
+                text-align: left;
+                li{
+                    display: flex;
+                    
+                }
+                
+                a {
+                    color: var(--white-color);
+                }
+   
             }
         
-            .registration-list {
-                display: flex;
+            
+        }
+        .registration-list {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            button {
+                
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 18.66px;
+                text-align: left;
+
+            }
+           .sing-in-link {
+            border: 0px;
+            background: none;
+            color: var(--white-color);
             }
         }
     }
