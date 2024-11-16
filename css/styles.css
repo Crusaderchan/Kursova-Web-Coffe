@@ -1,0 +1,96 @@
+:root {
+    --basic-font: "Playfair Display", san-serif;
+    --dark-color: #1E1E1E;
+    --white-color: #FFFFFF;
+
+}
+
+
+body {
+    font-family: var(--basic-font);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--dark-color);
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+  
+a {
+    text-decoration: none;
+}
+
+h1,
+a,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+ }
+svg {
+    margin: 0;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.container {
+    max-width: 1180px;
+}
+
+section {
+    padding: 94px 0;
+}
+
+.container {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+
+header {
+    padding-top: 0;
+    background-image: url(../img/header_hero_back_img.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 1366px;
+    color: var(--white-color);
+    .header-top {
+        display: flex;
+        justify-content: space-around;
+        nav {
+        
+            .nav-list {
+                display: flex;
+            }
+        
+            .registration-list {
+                display: flex;
+            }
+        }
+    }
+    
+
+    
+    
+    
+}
+
+
