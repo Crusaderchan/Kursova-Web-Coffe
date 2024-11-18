@@ -4,6 +4,10 @@
     --white-color: #FFFFFF;
     --special-font: "Clicker Script", san-serif;
     --creamy-color: #F9C06A;
+    --brown-color: #603809;
+    --gray-color: #707070;
+
+
 
 }
 
@@ -13,7 +17,7 @@ body {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    color: var(--dark-color);
+    color: var(--gray-color);
     margin-top: 0;
     margin-bottom: 0;
 
@@ -44,6 +48,7 @@ img {
  }
 svg {
     margin: 0;
+    color: var(--dark-color);
 }
 
 button {
@@ -57,7 +62,7 @@ button {
 }
 
 section {
-    padding: 94px 0;
+    padding: 41px 0;
 }
 
 .container {
@@ -72,15 +77,26 @@ section {
     padding: 14px 27px;
     border-radius: 20px;
     background-color: var(--creamy-color);
+    box-shadow: 0px 6px 12px 0px #F9C06A38;
+    ;
 
 }
 header {
     padding-top: 0;
-    background-image: url(../img/header_hero_back_img.jpg);
-    height: 100vh;
+    background: 
+        linear-gradient(89.82deg, #1E1E1E -6.88%, rgba(0, 0, 0, 0) 87.44%), /* Градієнт */
+        url(../img/header_hero_back_img.jpg); /* Фонове зображення */
+    background-position: center;
+    background-position-y: start;
+    height: 768px;
+    width: 100%; /* Щоб адаптуватися до менших екранів */
     background-repeat: no-repeat;
     background-size: 1366px;
     color: var(--white-color);
+    position: relative; 
+    
+    
+    
     .header-top {
         padding-top: 30px;
         display: flex;
@@ -133,11 +149,151 @@ header {
             }
         }
     }
-    
 
+    .header-hero {
+        padding-top: 116px;
+        padding-left: 93px;
+        padding-bottom: 84px;
+
+
+    }
+    .hero-title {
+        
+        font-family: Playfair Display;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 29.33px;
+        text-align: left;
+        
+
+    }
+    .hero-mainTitle {
+        font-family: Clicker Script;
+        font-size: 220px;
+        font-weight: 400;
+        line-height: 290.58px;
+        text-align: left;
+        
+
+    }
+    .hero-paragraph {
+        font-family: Playfair Display;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        max-width: 527px;
+        padding-bottom: 20px;
+
+    }
+
+    .header-background {
+        position: relative;
+        width: 1366px; /* Встановлюємо ширину для фону */
+        height: 100%; /* Висота відповідає контейнеру */
+        background: 
+            linear-gradient(89.82deg, #1E1E1E -6.88%, rgba(0, 0, 0, 0) 87.44%), /* Градієнт */
+            url(../img/header_hero_back_img.jpg); /* Фонове зображення */
+        background-position: center;
+        background-position-y: start;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0px 4px 4px 0px #00000040; /* Тінь */
+    }
+   
+}
+
+.presentation {
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
+    h2 {
+        color: var(--brown-color);
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 71.98px;
+        text-align: left;
+        color: var(--brown-color);
+    }
+    p {
+        padding: 29px 0px;
+        max-width: 585px; ;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: left;
+    }
+
+}
+
+.ourMenu {
+    h2 {
+        color: var(--brown-color);
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 71.98px;
+        text-align: center;
+    }
+    .ourMenu-paragraph {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: center;
+        padding: 16px 0 32px 0;
+    }
+    h4 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 29.33px;
+        text-align: center;
+        color: var(--brown-color);
+        padding: 14px 0 6px 0;
+
+    }
+    .ourMenu-list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .ourMenu-list-item-inner {
+            text-align: center; 
+            p{
+                color: var(--dark-color);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21.33px;
+               
+            }
     
-    
+            .price {
+                color: var(--brown-color);
+                font-family: Playfair Display;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 23.99px;
+                padding: 6px 0 16px 0;          
+            }
+        }
+    }
+        
     
 }
 
-
+.ourPreference {
+    h2 {
+        color: var(--brown-color);
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 71.98px;
+        text-align: center;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: center;
+        padding: 16px 0 32px 0;
+    }
+}
