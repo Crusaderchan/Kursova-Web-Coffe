@@ -6,6 +6,11 @@
     --creamy-color: #F9C06A;
     --brown-color: #603809;
     --gray-color: #707070;
+    --border-color: #F9C06A6B;
+    --creamy-white-color: #FFF9F1;
+    --more-creamy-white-color: #FFEED8;
+
+
 
 
 
@@ -48,7 +53,7 @@ img {
  }
 svg {
     margin: 0;
-    color: var(--dark-color);
+    
 }
 
 button {
@@ -57,16 +62,14 @@ button {
     cursor: pointer;
     border: 0px;
 }
-.container {
-    max-width: 1180px;
-}
+
 
 section {
     padding: 41px 0;
 }
 
 .container {
-    max-width: 1180px;
+    max-width: 1210px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -189,19 +192,7 @@ header {
 
     }
 
-    .header-background {
-        position: relative;
-        width: 1366px; /* Встановлюємо ширину для фону */
-        height: 100%; /* Висота відповідає контейнеру */
-        background: 
-            linear-gradient(89.82deg, #1E1E1E -6.88%, rgba(0, 0, 0, 0) 87.44%), /* Градієнт */
-            url(../img/header_hero_back_img.jpg); /* Фонове зображення */
-        background-position: center;
-        background-position-y: start;
-        background-repeat: no-repeat;
-        background-size: cover;
-        box-shadow: 0px 4px 4px 0px #00000040; /* Тінь */
-    }
+    
    
 }
 
@@ -282,6 +273,7 @@ header {
 }
 
 .ourPreference {
+    text-align: center;
     h2 {
         color: var(--brown-color);
         font-size: 54px;
@@ -294,6 +286,206 @@ header {
         font-weight: 400;
         line-height: 34px;
         text-align: center;
+        
+    }
+    h3 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 37.32px;
+        color: var(--brown-color);
+        text-align: center;
+    }
+    .ourPreference-paragraph {
         padding: 16px 0 32px 0;
     }
+    .ourPreference-list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        
+        .ourPreference-list-inner {
+            padding: 36px 40px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            background-color: var(--creamy-white-color);
+           
+            p{
+                width: 176px;
+                padding-top: 8px;
+            }
+        }
+        .ourPreference-list-inner:hover{
+            background-color: var(--more-creamy-white-color);
+            border: 0px;
+        }
+    }
+    .ourPreference-under-text {
+        padding-top: 32px;
+        padding-bottom: 24px;
+    }
+
 }
+
+
+.banner-back-container {
+    max-width: 1366px;
+    max-height: 574px;
+    background-image: url(../img/coffee_bean.png), url(../img/Banner-back.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position:  bottom right, center;
+    margin: 0 auto;
+    
+}
+.banner .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center
+    
+    
+    
+}
+.banner-text {
+    max-width: 575px;
+    text-align: left;
+    color: var(--white-color);
+    h2 {
+        
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 71.98px;
+        
+    }
+    p{
+        padding: 22px 0;
+        max-width: 409px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+      }
+}
+
+.cup {
+    padding: 54px 100px 54px 0px;
+     
+}
+
+.feedback-title {
+    color: var(--brown-color);
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 71.98px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+.feedback-under-title-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+    padding-bottom: 45px;
+}
+.slider-container {
+    position: relative;
+    
+}
+.slider-button-list {
+    width: 108.37%;
+    max-width: 1064px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    z-index: 2;
+    position: absolute;
+    top: 221px;
+    left: -4.16%;
+    
+}
+.feedback-text{
+    
+    position: relative;
+    text-align: center;
+    background-color: var(--creamy-white-color);
+    border: 1px solid var(--border-color);
+    margin: 0px 84px;
+    height: 524px;
+    
+    
+}
+.quotation-mark {
+    padding-top: 54px;
+    padding-left: 29px;
+    font-size: 220px;
+    font-weight: 700;
+    line-height: 112px;
+    text-align: left;
+    color: var(--brown-color);
+    position: absolute;
+}
+.slideshow-container.active {
+    display: block; /* Показуємо активний слайд */
+}
+.slideshow-container {
+    display: none; /* За замовчуванням ховаємо всі слайди */
+}
+
+.feedback-text-paragraph {
+    padding-top: 129px;
+    max-width: 80%;
+    color: var(--gray-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 auto;
+}
+.feedback-text-clientName {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42.66px;
+    text-align: center;
+    color: var(--brown-color);
+    padding-top: 28px;
+    padding-bottom: 4px;   
+}
+.feedback-text-clientDiscription {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+    padding-bottom: 101px;
+
+}
+.feedback-text-img-container {
+    width: 112px;
+    height: 112px;
+    overflow: hidden;
+    border-radius: 16px;
+    position: absolute; 
+    bottom: -56px;
+    left: 50%;
+    
+    
+}
+.feedback-text-img-container img {
+    width: 100%; 
+}
+.slideshow-container.active {
+    display: block; /* Показуємо тільки активний слайд */
+}
+.button-container{
+    text-align: end;
+}
+.prev, .next{
+    max-height: 82px;
+    padding: 33px;
+    background-color: var(--creamy-color);
+    border-radius: 16px;
+    svg {
+       max-width: 16px;
+       max-height: 16px;
+    }
+    
+}
+
