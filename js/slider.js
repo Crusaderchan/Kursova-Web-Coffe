@@ -1,14 +1,14 @@
-let currentSlide = 0; // Змінна для поточного слайду
-const slides = document.querySelectorAll('.slideshow-container'); // Всі слайди
+let currentSlide = 0; 
+const slides = document.querySelectorAll('.slideshow-container'); 
 
-// Функція для зміни слайду
+
 function changeSlide(n) {
-    slides[currentSlide].classList.remove('active'); // Прибираємо клас active з поточного слайду
-    currentSlide = (currentSlide + n + slides.length) % slides.length; // Обчислюємо індекс нового слайду
-    slides[currentSlide].classList.add('active'); // Додаємо клас active новому слайду
+    slides[currentSlide].classList.remove('active'); 
+    currentSlide = (currentSlide + n + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
 }
 
-// Початкове відображення першого слайду
+
 slides[currentSlide].classList.add('active');
 
 

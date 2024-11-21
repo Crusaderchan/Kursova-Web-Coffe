@@ -99,7 +99,7 @@ header {
     height: 768px;
     
     background-repeat: no-repeat;
-    background-size: 1366px;
+    background-size: 1600px;
     color: var(--white-color);
     
     
@@ -196,7 +196,9 @@ header {
         padding-bottom: 20px;
 
     }
-
+    .header-link a:hover {
+        color: var(--more-creamy-white-color);
+    }
     
    
 }
@@ -557,20 +559,33 @@ header {
 }
 .subscribe-button:hover {
     background-color: var(--more-creamy-white-color);
-    border: 1px solid var(--brown-color);
+    
     
 }
 
 footer {
-    color: var(--white-color);
     position: relative;
-    background-color: #603809; 
-    background-image: 
-        linear-gradient(to top, #603809, #8b5e38), 
-        url(../img/fotter_image.png); 
-    background-size: cover, contain; 
-    background-repeat: no-repeat;
-    background-position: center bottom, center bottom; 
+    color: var(--white-color);
+    background-color: #603809;
+    
+
+    &::after {
+        position: absolute;
+        content: '';
+        inset: 0;
+        background-image: url(../img/fotter_image.png),
+        linear-gradient(0deg, rgba(96,56,9,1) 0%, rgba(96,56,9,1) 100%);
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center bottom; 
+        background-blend-mode: overlay;
+        opacity: 0.8;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
 }
 
 
