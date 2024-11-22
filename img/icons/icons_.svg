@@ -97,12 +97,12 @@
 </symbol>
 
 <symbol id="vector" width="16.000000pt" height="16.000000pt" viewBox="0 0 20 22" fill="none" preserveAspectRatio="xMidYMid meet">
-           <path d="M8 9V16L16 8L8 0V7H0V9H8Z" fill="#603809"/>
+           <path d="M8 9V16L16 8L8 0V7H0V9H8Z" fill="currentColor"/>
        
 </symbol>
 
 <symbol id="prev" width="16.000000pt" height="16.000000pt" viewBox="0 0 20 22" fill="none" preserveAspectRatio="xMidYMid meet">
-           <path d="M8 9V16L0 8L8 0V7H16V9H8Z" fill="#603809"/>
+           <path d="M8 9V16L0 8L8 0V7H16V9H8Z" fill="currentColor"/>
 
        
 </symbol>
