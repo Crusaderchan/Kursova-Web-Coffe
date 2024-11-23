@@ -470,10 +470,7 @@ header {
     opacity: 0;
     /*transition: visibility 0s, opacity 5s linear;*/
 }
-.slide.active {
-    visibility: visible;
-    opacity: 1;
-}
+
 .slide.active.from-left {
     visibility: visible;
     display:block;
@@ -760,7 +757,7 @@ address {
     .ourPreference-list {
         flex-wrap: wrap;
        
-       
+    
        justify-content: center;
     }
     .ourMenu-list {
@@ -790,4 +787,31 @@ address {
     padding: 65px 30px;
    }
    
+   .slider-button-list{
+    display: none;
+   }
+   .slide {
+    padding: 60px 50px 51px;
+   }
+   .quotation-mark {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 120px;
+    
+    }
+    .feedback-text-paragraph {
+        height: 300px;
+    }
+    .feedback-text-clientName {
+        padding-top: 28px;
+        padding-bottom: 4px;   
+    }
+    .feedback-text-img-container {
+       
+        left: 41%;  
+        bottom: -6%;
+    }
+    .feedback-text {
+        height: 550px;
+    }
   }

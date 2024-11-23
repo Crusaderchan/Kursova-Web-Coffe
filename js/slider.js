@@ -12,7 +12,7 @@ function currentSlide(n) {
 function showSlides(n, idx) {
     var i;
     var slides = document.getElementsByClassName("slide");
-    var dots = document.getElementsByClassName("dot");
+    
   
     if (n > slides.length) {
       slideIndex = 1;
@@ -25,9 +25,6 @@ function showSlides(n, idx) {
       slides[i].classList.remove("active", "from-left", "from-right");
     }
   
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
   
     if (idx === undefined) {
       idx = 1;
@@ -43,8 +40,30 @@ function showSlides(n, idx) {
     slides[slideIndex - 1].classList.add("active");
   
     
-    
+
   
-    dots[slideIndex - 1].className += " active";
+   
   }
   
+
+
+var touchStartX = 0;
+var touchEndX = 0;
+
+// Слухаємо події для каруселі
+document.querySelector('.slider-container').addEventListener('touchstart', function(event) {
+  touchStartX = event.changedTouches[0].screenX; // Отримуємо початкову позицію свайпу
+}, false);
+
+document.querySelector('.slider-container').addEventListener('touchend', function(event) {
+  touchEndX = event.changedTouches[0].screenX; // Отримуємо кінцеву позицію свайпу
+  
+  if (touchEndX < touchStartX) {
+    // Свайп вліво
+    plusSlides(1);
+  }
+  if (touchEndX > touchStartX) {
+    // Свайп вправо
+    plusSlides(-1);
+  }
+}, false);
