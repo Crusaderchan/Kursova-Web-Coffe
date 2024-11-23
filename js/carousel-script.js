@@ -1,38 +1,40 @@
 const track = document.querySelector('.ourMenu-list');
 let startX = 0;
 let currentTranslate = 0;
-let prevTranslate = 0;
+let prevTranslate = 0; // Збереження останньої позиції
 let isDragging = false;
 
-// Початок свайпу
 track.addEventListener('touchstart', (e) => {
   isDragging = true;
-  startX = e.touches[0].clientX; // Початкова координата свайпу
+  startX = e.touches[0].clientX; // Записуємо стартову позицію
 });
 
-// Під час свайпу
 track.addEventListener('touchmove', (e) => {
   if (!isDragging) return;
-  const currentX = e.touches[0].clientX; // Поточна координата свайпу
-  const movement = currentX - startX; // Різниця для зсуву
-  currentTranslate = prevTranslate + movement; // Оновлюємо зсув
-  track.style.transform = `translateX(${currentTranslate}px)`;
+  
+  const currentX = e.touches[0].clientX;
+  const movement = currentX - startX;
+  
+  // Обчислюємо нову позицію
+  currentTranslate = prevTranslate + movement;
+  track.style.transform = `translateX(${currentTranslate}px)`; // Застосовуємо зсув
 });
 
-// Завершення свайпу
 track.addEventListener('touchend', () => {
   isDragging = false;
 
-  // Обмежуємо вихід за межі каруселі
-  const maxTranslate = 0;
+  // Обмежуємо рух каруселі, щоб вона не виходила за межі
+  const maxTranslate = -1;
   const minTranslate = -track.scrollWidth + track.clientWidth;
 
+  // Обмежуємо карусель в межах допустимого зсуву
   if (currentTranslate > maxTranslate) {
     currentTranslate = maxTranslate;
   } else if (currentTranslate < minTranslate) {
     currentTranslate = minTranslate;
   }
 
-  prevTranslate = currentTranslate; // Запам'ятовуємо останній зсув
-  track.style.transform = `translateX(${currentTranslate}px)`;
+  // Записуємо поточний зсув як попередній
+  prevTranslate = currentTranslate;
+  track.style.transform = `translateX(${currentTranslate}px)`; // Оновлюємо карусель
 });
