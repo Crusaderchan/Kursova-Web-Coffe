@@ -144,7 +144,9 @@ header {
         text-align: left;
 
     }
-    .sing-in-link{
+    
+}
+.sing-in-link{
     border: 0px;
     background: none;
     color: var(--white-color);
@@ -155,7 +157,6 @@ header {
     
         color: var(--creamy-color);
     }
-}
 .nav-list-item {
     display: flex;
     
@@ -813,9 +814,31 @@ address {
 
 @media (max-width: 480px) {
 
-   #nav-list-id{
-        display: block;
-    }
+   .header-top {
+    display: block;
+    
+   }
+   .logo {
+    text-align: center;
+   }
+   .nav-list{
+    padding-top: 10px;
+    justify-content: center;
+   }
+   .registration-list {
+    padding-top: 10px;
+    display: block;
+    text-align: end;
+   }
+   .sing-in-link {
+    padding: 14px 27px;
+    
+   }
+   .header-hero {
+    padding: 30px 70px 0px 30px;
+
+
+}
     .hero-mainTitle {
         font-size: 100px;
         
