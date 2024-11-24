@@ -827,7 +827,7 @@ address {
    }
    .registration-list {
     padding-top: 10px;
-    display: block;
+    display: none;
     text-align: end;
    }
    .sing-in-link {
