@@ -813,13 +813,18 @@ address {
 }
 
 @media (max-width: 480px) {
+    header {
+        background-position: -100px 0;
+    }
 
    .header-top {
     display: block;
+    position: relative;
     
    }
    .logo {
     text-align: center;
+    
    }
    .nav-list{
     padding-top: 10px;
@@ -827,21 +832,28 @@ address {
    }
    .registration-list {
     padding-top: 10px;
-    display: none;
+    display: block;
     text-align: end;
+    position: absolute;
+    left: 73%;
    }
    .sing-in-link {
     padding: 14px 27px;
     
    }
    .header-hero {
-    padding: 20px 70px 0px 30px;
+    padding: 100px 70px 0px 30px;
+    }
 
+    .hero-title {
+        padding-bottom: 160px;
+    }
 
-}
     .hero-mainTitle {
         font-size: 100px;
-        
+        max-height: 220px;
+        position: absolute;
+        bottom: 54%;
     }
    
     footer {
