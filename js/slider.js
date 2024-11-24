@@ -36,13 +36,9 @@ function showSlides(n, idx) {
       slides[slideIndex - 1].classList.add("from-right");
     }
   
-    // Додаємо активний слайд
+    
     slides[slideIndex - 1].classList.add("active");
   
-    
-
-  
-   
   }
   
 

@@ -102,114 +102,109 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--white-color);
+   
+}
+.header-top {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     
-    
-    
-    
-    .header-top {
-        padding-top: 30px;
+}
+.logo {
+    font-family: var(--special-font);
+    font-size: 35px;
+}
+
+
+    .nav-list {     
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .logo {
-            font-family: var(--special-font);
-            font-size: 35px;
-        }
-        nav {
-        
-            .nav-list {
-                display: flex;
-                gap: 50px;
-                color: var(--white-color);
-                font-family: Playfair Display;
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 18.66px;
-                text-align: left;
-                li{
-                    display: flex;
-                    
-                }
-                
-                a {
-                    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                    color: var(--white-color);
-                }
-                a:hover {
-                    color: var(--creamy-color);
-                }
-   
-            }
-        
-            
-        }
-        .registration-list {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            button {
-                
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 18.66px;
-                text-align: left;
-
-            }
-            .sing-in-link{
-            border: 0px;
-            background: none;
-            color: var(--white-color);
-            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            }
-            .sing-in-link:hover {
-                
-            
-                color: var(--creamy-color);
-            }
-        }
-    }
-
-    .header-hero {
-        padding-top: 116px;
-        padding-left: 93px;
-        padding-bottom: 84px;
-
-
-    }
-    .hero-title {
-        
+        gap: 50px;
+        color: var(--white-color);
         font-family: Playfair Display;
-        font-size: 22px;
+        font-size: 14px;
         font-weight: 500;
-        line-height: 29.33px;
+        line-height: 18.66px;
         text-align: left;
         
 
+    
+
+    
     }
-    .hero-mainTitle {
-        font-family: Clicker Script;
-        font-size: 220px;
-        font-weight: 400;
-        line-height: 290.58px;
-        text-align: left;
+.registration-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    button {
         
-
-    }
-    .hero-paragraph {
-        font-family: Playfair Display;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 34px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18.66px;
         text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        max-width: 527px;
-        padding-bottom: 20px;
 
     }
+    .sing-in-link{
+    border: 0px;
+    background: none;
+    color: var(--white-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .sing-in-link:hover {
+        
     
+        color: var(--creamy-color);
+    }
+}
+.nav-list-item {
+    display: flex;
     
-   
+}
+
+.header-link {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--white-color);
+}
+.header-link:hover {
+    color: var(--creamy-color);
+}
+.header-hero {
+    padding-top: 116px;
+    padding-left: 93px;
+    padding-bottom: 84px;
+
+
+}
+.hero-title {
+    
+    font-family: Playfair Display;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 29.33px;
+    text-align: left;
+    
+
+}
+.hero-mainTitle {
+    font-family: Clicker Script;
+    font-size: 220px;
+    font-weight: 400;
+    line-height: 290.58px;
+    text-align: left;
+    
+
+}
+.hero-paragraph {
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    max-width: 527px;
+    padding-bottom: 20px;
+
 }
 
 .presentation {
@@ -814,4 +809,26 @@ address {
     .feedback-text {
         height: 550px;
     }
-  }
+}
+
+@media (max-width: 480px) {
+
+   #nav-list-id{
+        display: block;
+    }
+    .hero-mainTitle {
+        font-size: 100px;
+        
+    }
+   
+    footer {
+        display: none;
+    }
+    .footer-bottom-list {
+        display: none;
+    }
+
+
+
+
+}
