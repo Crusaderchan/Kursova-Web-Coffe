@@ -30,7 +30,7 @@ track.addEventListener('touchend', () => {
   track.style.transition = 'transform 0.5s ease';
 
 
-  const maxTranslate = 0; 
+  const maxTranslate = 398; 
   const minTranslate = -track.scrollWidth + track.clientWidth; 
 
   if (currentTranslate > maxTranslate) {
